@@ -76,6 +76,50 @@
     <div class="container">
       <h2 class="section-title dark-blue-text text-center mb-5">Experience</h2>
 
+      <!-- Inline CSS for Experience Section -->
+      <style>
+        .experience-card {
+          background: #f9f9f9;
+          border-radius: 8px;
+          padding: 20px;
+          margin-bottom: 20px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .experience-card .row {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+        }
+        .experience-card .col-md-4 {
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-bottom: 10px;
+        }
+        .experience-card .col-md-8 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .experience-card p {
+          margin: 0 0 10px;
+          line-height: 1.6;
+          word-wrap: break-word;
+        }
+        .experience-card .tools {
+          font-weight: bold;
+          color: #333;
+        }
+        @media (min-width: 768px) {
+          .experience-card .col-md-4 {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+          }
+          .experience-card .col-md-8 {
+            flex: 0 0 66.666667%;
+            max-width: 66.666667%;
+          }
+        }
+      </style>
+
       <!-- Experience: Nagarro -->
       <div class="experience-card">
         <div class="row">
@@ -86,15 +130,12 @@
           </div>
           <div class="col-md-8">
             <p>
-              Working as a DevOps Engineer, I began with an intensive training phase focused on key DevOps tools and practices.
-              Currently contributing to a BMW project, gaining experience with enterprise-level CI/CD pipelines, cloud infrastructure, and automation workflows.
+              Working as a DevOps Engineer, I began with an intensive training phase focused on key DevOps tools and practices. Currently contributing to a BMW project, gaining experience with enterprise-level CI/CD pipelines, cloud infrastructure, and automation workflows.
             </p>
-            <p><strong>Tools:</strong> Java, Spring Boot, Terraform, Kubernetes, Angular, Jenkins, .NET, C#, AWS, Azure, Docker, Ansible, SonarQube, Puppet, JFrog, Tomcat, Git, Maven, Grafana, Prometheus</p>
+            <p class="tools">Tools: Java, Spring Boot, Terraform, Kubernetes, Angular, Jenkins, .NET, C#, AWS, Azure, Docker, Ansible, SonarQube, Puppet, JFrog, Tomcat, Git, Maven, Grafana, Prometheus</p>
           </div>
         </div>
       </div>
-
-      <hr />
 
       <!-- Experience: CiTin -->
       <div class="experience-card">
@@ -106,15 +147,12 @@
           </div>
           <div class="col-md-8">
             <p>
-              Collaborated with a two-person team to develop an application that retrieved specific data from invoices and outputted it as JSON.
-              Automated and optimized the extraction process for downstream tasks.
+              Collaborated with a two-person team to develop an application that retrieved specific data from invoices and outputted it as JSON. Automated and optimized the extraction process for downstream tasks.
             </p>
-            <p><strong>Tools:</strong> Python, LangChain, Docker, Streamlit, OpenAI API, OCR</p>
+            <p class="tools">Tools: Python, LangChain, Docker, Streamlit, OpenAI API, OCR</p>
           </div>
         </div>
       </div>
-
-      <hr />
 
       <!-- Experience: IPVC -->
       <div class="experience-card">
@@ -126,10 +164,9 @@
           </div>
           <div class="col-md-8">
             <p>
-              Developed a GPA calculator app for high school students to determine eligibility for university programs.
-              Included suggestions for target grades and GPA goals. Focused on making academic planning easier and more accessible.
+              Developed a GPA calculator app for high school students to determine eligibility for university programs. Included suggestions for target grades and GPA goals. Focused on making academic planning easier and more accessible.
             </p>
-            <p><strong>Tools:</strong> React Native, Express.js, MongoDB, Figma</p>
+            <p class="tools">Tools: React Native, Express.js, MongoDB, Figma</p>
           </div>
         </div>
       </div>
